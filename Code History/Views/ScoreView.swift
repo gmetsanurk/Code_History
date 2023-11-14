@@ -12,7 +12,7 @@ struct ScoreView: View {
     
     var body: some View {
         ZStack {
-            GameColor.main.ignoresSafeArea()
+            GameColor.gradient.ignoresSafeArea()
             VStack {
                 Spacer()
                 Text("Всего очков:")
@@ -30,7 +30,7 @@ struct ScoreView: View {
             NavigationLink(
                     destination: GameView(),
                     label: {
-                        BottomTextView(str: "Перепройти тест")
+                        BottomTextView(str: "Начать заново")
                     })
             }
             .foregroundColor(.white)
