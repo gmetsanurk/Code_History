@@ -12,11 +12,11 @@ struct WelcomeView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                GameColor.main.ignoresSafeArea()
+                GameColor.gradient.ignoresSafeArea()
                 VStack {
                     Spacer()
                     VStack(alignment: .leading, spacing: 0) {
-                        Text("Выберите правильные ответы для следующих вопросов")
+                        Text("Добро пожаловать на тест по истории кода! Вам предстоит ответить на десять вопросов")
                             .font(.largeTitle)
                             .bold()
                             .multilineTextAlignment(.leading)
